@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --primary-color:#E06D06;
+  --sec-color:#161032;
+  --tert-color:#FAFF81;
+}
+
+body {
+  background-color: var(--sec-color);
+}
+
+/* header  */
+nav {
+  background-color: var(--primary-color);
+  height: 3.5rem;
+  text-align: center;
+  padding: 0.75rem;
+}
+
+nav h1 {
+  color: var(--sec-color);
+}
+
+.score {
+  border: 3px solid white;
+  width: 10%;
+  margin: 1.5rem auto;
+  color: var(--primary-color);
+  font-size: 1.5em;
+  border-radius: 4px;
+  text-align: center;
+  padding: 1rem 1rem;
+  position: relative;
+}
+
+.badge {
+  background: var(--tert-color);
+  font-size: 0.55em;
+  padding: 0 0.25rem;
+  color: var(--sec-color);
+}
+
+#user {
+  position: absolute;
+  top: 20px;
+  left: -15px;
+}
+
+#computer {
+  position: absolute;
+  top: 20px;
+  right: -25px;
+}
+
+.result-message {
+  font-size: 35px;
+  color: var(--primary-color);
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.result-message p {
+  font-weight: bold;
+}
+
+.choices {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.choices .choice {
+  display: inline-block;
+  margin: 2.5rem;
+  border: 4px solid white;
+  border-radius: 50%;
+  padding: 1rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.choices .choice:hover {
+  cursor: pointer;
+  background-color: var(--primary-color);
+}
+
+.choices .choice img {
+  width: 100px;
+  height: 100px;
+}
+
+#action-message {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 2rem;
+}
+/*# sourceMappingURL=styles.css.map */
