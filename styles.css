@@ -29,10 +29,10 @@ nav h1 {
 
 .score {
   border: 3px solid white;
-  width: 10%;
+  width: 200px;
   margin: 1.5rem auto;
   color: var(--primary-color);
-  font-size: 1.5em;
+  font-size: 2em;
   border-radius: 4px;
   text-align: center;
   padding: 1rem 1rem;
