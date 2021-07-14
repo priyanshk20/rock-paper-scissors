@@ -101,4 +101,21 @@ nav h1 {
   text-align: center;
   margin-top: 2rem;
 }
+
+footer {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0px;
+  margin-top: 8.55rem;
+  padding: 1rem 0rem;
+  background-color: var(--primary-color);
+  width: 100%;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--sec-color);
+  font-weight: bold;
+}
 /*# sourceMappingURL=styles.css.map */
