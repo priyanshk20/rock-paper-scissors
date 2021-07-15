@@ -49,13 +49,13 @@ nav h1 {
 #user {
   position: absolute;
   top: 20px;
-  left: -15px;
+  left: -20px;
 }
 
 #computer {
   position: absolute;
   top: 20px;
-  right: -25px;
+  right: -40px;
 }
 
 .result-message {
@@ -92,6 +92,24 @@ nav h1 {
 .choices .choice img {
   width: 100px;
   height: 100px;
+}
+
+.winner {
+  border: 4px solid green;
+  -webkit-box-shadow: 0 0 0 5px #02a302;
+          box-shadow: 0 0 0 5px #02a302;
+}
+
+.loser {
+  border: 4px solid red;
+  -webkit-box-shadow: 0 0 0 5px #ff3e3e;
+          box-shadow: 0 0 0 5px #ff3e3e;
+}
+
+.tie {
+  border: 4px solid gray;
+  -webkit-box-shadow: 0 0 0 5px lightgray;
+          box-shadow: 0 0 0 5px lightgray;
 }
 
 #action-message {

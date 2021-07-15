@@ -27,6 +27,10 @@ const win = (userChoice,compChoice) => {
     userElem.innerHTML = userScore;
     compElem.innerHTML = computerScore;
     result.innerHTML = `User's ${convert(userChoice)} beats Computer's ${convert(compChoice)}. You win!😁`;
+    document.getElementById(userChoice).classList.add('winner');
+    setTimeout(() => {
+        document.getElementById(userChoice).classList.remove('winner')
+    }, 1000);
 }
 
 const lose = (userChoice,compChoice) => {
@@ -34,10 +38,18 @@ const lose = (userChoice,compChoice) => {
     compElem.innerHTML = computerScore;
     userElem.innerHTML =userScore;
     result.innerHTML = `Computer's ${convert(compChoice)} beats User's ${convert(userChoice)}. You lose!😢`;
+    document.getElementById(userChoice).classList.add('loser');
+    setTimeout(() => {
+        document.getElementById(userChoice).classList.remove('loser')
+    }, 1000);
 }
 
 const draw = (userChoice,compChoice) => {
     result.innerHTML = `Computer chose ${convert(userChoice)} too. Its a DRAW!😒`;
+    document.getElementById(userChoice).classList.add("tie");
+    setTimeout(() => {
+        document.getElementById(userChoice).classList.remove('tie')
+    }, 1000);
 }
 
 const game = (userChoice) => {
