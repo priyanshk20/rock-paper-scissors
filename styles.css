@@ -6,9 +6,9 @@
 }
 
 :root {
-  --primary-color:#E06D06;
-  --sec-color:#161032;
-  --tert-color:#FAFF81;
+  --primary-color: #e06d06;
+  --sec-color: #161032;
+  --tert-color: #faff81;
 }
 
 body {
@@ -74,7 +74,7 @@ nav h1 {
   margin-top: 1rem;
 }
 
-.choices .choice {
+.choice {
   display: inline-block;
   margin: 2.5rem;
   border: 4px solid white;
@@ -84,12 +84,12 @@ nav h1 {
   transition: all 0.3s ease;
 }
 
-.choices .choice:hover {
+.choice:hover {
   cursor: pointer;
   background-color: var(--primary-color);
 }
 
-.choices .choice img {
+.choice img {
   width: 100px;
   height: 100px;
 }

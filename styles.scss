@@ -1,140 +1,135 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-:root{
-    --primary-color:#E06D06;
-    --sec-color:#161032;
-    --tert-color:#FAFF81;
+:root {
+  --primary-color: #e06d06;
+  --sec-color: #161032;
+  --tert-color: #faff81;
 }
 
-body{
-    background-color: var(--sec-color);
+body {
+  background-color: var(--sec-color);
 }
-
 
 /* header  */
 
-nav{
-    background-color: var(--primary-color);
-    height: 3.5rem;
-    text-align: center;
-    padding:0.75rem;
-
-    h1{
-        color: var(--sec-color);
-    }
-}
-
-// scoreboard 
-
-.score{
-    border: 3px solid white;
-    width: 200px;
-    margin: 1.5rem auto;
-    color: var(--primary-color);
-    font-size: 2em;
-    border-radius:4px;
-    text-align: center;
-    padding: 1rem 1rem;
-    position: relative;
-}
-
-.badge{
-    background: var(--tert-color);
-    font-size: 0.55em;
-    padding:0 0.25rem;
-    color: var(--sec-color);
-}
-
-#user{
-    position: absolute;
-    top: 20px;
-    left: -20px;
-}
-
-#computer{
-    position:absolute;
-    top: 20px;
-    right: -40px;
-}
-
-
-.result-message{
-    
-    font-size:35px;
-    color: var(--primary-color);
-    text-align: center;
-    margin-top: 2rem;
-
-    p{
-        font-weight:bold;
-    }
-}
-
-.choices{
+nav {
+  background-color: var(--primary-color);
+  height: 3.5rem;
   text-align: center;
-  margin-top:1rem;
+  padding: 0.75rem;
 
-   .choice{
-   display: inline-block;
-   margin: 2.5rem; 
-   border: 4px solid white;
-   border-radius:50%;
-   padding:1rem;
-   transition: all 0.3s ease;
-
-   &:hover{
-       cursor: pointer;
-       background-color: var(--primary-color);
-   }
-
-   img{
-       width: 100px;
-       height: 100px;
-   }
-
-}
+  h1 {
+    color: var(--sec-color);
+  }
 }
 
-.winner{
-    border: 4px solid green;
-    box-shadow: 0 0 0 5px rgb(2, 163, 2);
+// scoreboard
+
+.score {
+  border: 3px solid white;
+  width: 200px;
+  margin: 1.5rem auto;
+  color: var(--primary-color);
+  font-size: 2em;
+  border-radius: 4px;
+  text-align: center;
+  padding: 1rem 1rem;
+  position: relative;
 }
 
-.loser{
-    border:4px solid red;
-    box-shadow: 0 0 0 5px rgb(255, 62, 62);
+.badge {
+  background: var(--tert-color);
+  font-size: 0.55em;
+  padding: 0 0.25rem;
+  color: var(--sec-color);
 }
 
-.tie{
-    border: 4px solid gray;
-    box-shadow: 0 0 0 5px lightgray;
+#user {
+  position: absolute;
+  top: 20px;
+  left: -20px;
 }
 
-#action-message{
-        color: var(--primary-color);
-        font-weight: bold;
-        font-size: 20px;
-        text-align: center;
-        margin-top:2rem;
+#computer {
+  position: absolute;
+  top: 20px;
+  right: -40px;
 }
 
-footer{
-    position:sticky;
-    bottom: 0px;
-    margin-top:8.55rem;
-    padding:1rem 0rem;
+.result-message {
+  font-size: 35px;
+  color: var(--primary-color);
+  text-align: center;
+  margin-top: 2rem;
+
+  p {
+    font-weight: bold;
+  }
+}
+
+.choices {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.choice {
+  display: inline-block;
+  margin: 2.5rem;
+  border: 4px solid white;
+  border-radius: 50%;
+  padding: 1rem;
+  transition: all 0.3s ease;
+
+  &:hover {
+    cursor: pointer;
     background-color: var(--primary-color);
-    width: 100%;
-    text-align: center;
+  }
 
-    a{
-        text-decoration:none;
-        color: var(--sec-color);
-        font-weight: bold;
-    }
+  img {
+    width: 100px;
+    height: 100px;
+  }
 }
 
+.winner {
+  border: 4px solid green;
+  box-shadow: 0 0 0 5px rgb(2, 163, 2);
+}
+
+.loser {
+  border: 4px solid red;
+  box-shadow: 0 0 0 5px rgb(255, 62, 62);
+}
+
+.tie {
+  border: 4px solid gray;
+  box-shadow: 0 0 0 5px lightgray;
+}
+
+#action-message {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+footer {
+  position: sticky;
+  bottom: 0px;
+  margin-top: 8.55rem;
+  padding: 1rem 0rem;
+  background-color: var(--primary-color);
+  width: 100%;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: var(--sec-color);
+    font-weight: bold;
+  }
+}
